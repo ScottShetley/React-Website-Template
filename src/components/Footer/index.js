@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'
 import {
   FaFacebook,
   FaInstagram,
   FaYoutube,
   FaTwitter,
-  FaLinkedin
-} from 'react-icons/fa';
-import { animateScroll as scroll } from 'react-scroll';
+  FaLinkedin,
+} from 'react-icons/fa'
+import {animateScroll as scroll} from 'react-scroll'
 import {
   FooterContainer,
   FooterWrap,
@@ -20,13 +20,13 @@ import {
   SocialLogo,
   WebsiteRights,
   SocialIcons,
-  SocialIconLink
-} from './FooterElements';
+  SocialIconLink,
+} from './FooterElements'
 
 const Footer = () => {
   const toggleHome = () => {
-    scroll.scrollToTop();
-  };
+    scroll.scrollToTop()
+  }
   return (
     <FooterContainer>
       <FooterWrap>
@@ -68,9 +68,9 @@ const Footer = () => {
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to='/' onClick={toggleHome}>
-              dolla
+              react website template
             </SocialLogo>
-            <WebsiteRights>dolla © 2020 All rights reserved.</WebsiteRights>
+            <WebsiteRights>react website template 2020.</WebsiteRights>
             <SocialIcons>
               <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
                 <FaFacebook />
@@ -101,7 +101,7 @@ const Footer = () => {
         </SocialMedia>
       </FooterWrap>
     </FooterContainer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

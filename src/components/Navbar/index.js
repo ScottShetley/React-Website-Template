@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { FaBars } from 'react-icons/fa';
-import { IconContext } from 'react-icons/lib';
-import { animateScroll as scroll } from 'react-scroll';
+import React, {useState, useEffect} from 'react'
+import {FaBars} from 'react-icons/fa'
+import {IconContext} from 'react-icons/lib'
+import {animateScroll as scroll} from 'react-scroll'
 import {
   MobileIcon,
   Nav,
@@ -11,35 +11,35 @@ import {
   NavLogo,
   NavMenu,
   NavBtn,
-  NavBtnLink
-} from './NavbarElements';
+  NavBtnLink,
+} from './NavbarElements'
 
-const Navbar = ({ toggle }) => {
-  const [scrollNav, setScrollNav] = useState(false);
+const Navbar = ({toggle}) => {
+  const [scrollNav, setScrollNav] = useState(false)
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
-      setScrollNav(true);
+      setScrollNav(true)
     } else {
-      setScrollNav(false);
+      setScrollNav(false)
     }
-  };
+  }
 
   useEffect(() => {
-    window.addEventListener('scroll', changeNav);
-  }, []);
+    window.addEventListener('scroll', changeNav)
+  }, [])
 
   const toggleHome = () => {
-    scroll.scrollToTop();
-  };
+    scroll.scrollToTop()
+  }
 
   return (
     <>
-      <IconContext.Provider value={{ color: '#fff' }}>
+      <IconContext.Provider value={{color: '#fff'}}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo onClick={toggleHome} to='/'>
-              dolla
+              react website template
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -101,7 +101,7 @@ const Navbar = ({ toggle }) => {
         </Nav>
       </IconContext.Provider>
     </>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

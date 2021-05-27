@@ -26,10 +26,11 @@ function HeroSection() {
         <VideoBg playsInline autoPlay loop muted src={Video} type='video/mov' />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Virtual Banking Made Easy</HeroH1>
+        <HeroH1>Your website here</HeroH1>
         <HeroP>
-          Sign up for a new account today and receive $250 in credit towards
-          your next payment.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet omnis
+          quam incidunt tempore minus saepe distinctio. Pariatur, quod quo, ab
+          possimus nisi non rem sit distinctio, sed omnis quam nam!
         </HeroP>
         <HeroBtnWrapper>
           <Button
