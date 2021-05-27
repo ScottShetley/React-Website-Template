@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Button } from '../ButtonElements';
+import React, {useState} from 'react'
+import {Button} from '../ButtonElements'
 
-import Video from '../../videos/video.mp4';
+import Video from '../../videos/Black Video.mp4'
 import {
   HeroContainer,
   HeroBg,
@@ -11,19 +11,19 @@ import {
   HeroP,
   HeroBtnWrapper,
   ArrowForward,
-  ArrowRight
-} from './HeroElements';
+  ArrowRight,
+} from './HeroElements'
 
 function HeroSection() {
-  const [hover, setHover] = useState(false);
+  const [hover, setHover] = useState(false)
 
   const onHover = () => {
-    setHover(!hover);
-  };
+    setHover(!hover)
+  }
   return (
     <HeroContainer id='home'>
       <HeroBg>
-        <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
+        <VideoBg playsInline autoPlay loop muted src={Video} type='video/mov' />
       </HeroBg>
       <HeroContent>
         <HeroH1>Virtual Banking Made Easy</HeroH1>
@@ -49,7 +49,7 @@ function HeroSection() {
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
-  );
+  )
 }
 
-export default HeroSection;
+export default HeroSection
